@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Account</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            font-family: 'Inter', sans-serif;
+        }
+        a{
+            text-decoration: none;
+            /* color: black; */
+        }
+
+        .chats:hover{
+            background-color: rgb(240, 240, 240);
+            border-radius: 10px;
+        }
+        .chat{
+            padding-top: 15px;
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body style="background-color: #EFEEF3;">
+
+    <div class="header" style="border-bottom: 2px solid rgb(221, 221, 221); background-color: #F7F7F7;">
+        <div class="container">
+            <!-- <div class="row mt-3 mb-3 d-flex justify-content-between">
+                <div class="col" ><a href="" style="color: #007AFF;">Edit</a></div>
+                <div class="col" style="text-align: right; color: #007AFF; font-size: 19px;"><a href=""><i class="fa-regular fa-pen-to-square"></i></a></div>
+            </div> -->
+            <div class="row pt-5">
+                <div class="text-header">
+                    <h1 class="fw-bold">Account</h1>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="search">
+                    <input type="text" style="border-radius: 10px; border: none; padding: 5px 10px; background-color: #F0F0F0;" placeholder="Search" class="w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="first bg-white mt-4">
+        <div class="container">
+            <div class="bar pt-3">
+                <a href="">
+                    <div class="baris d-flex">
+                        <div class="kolom">
+                            <img src="data:image/jpeg;base64,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" alt="" class="img-fluid rounded-circle" style="width: 60px;">
+                        </div>
+                        <div class="kolom ms-3 w-100 ">
+                            <div class="baris ">
+                                <div class="kolom d-flex justify-content-between ">
+                                    <h1 class="fw-bolder text-black" style="font-size: 17px;">Adam Lavine</h1>
+                                    <p class="fw-semibold text-secondary" style="font-size: 12px;"><i class="fa-solid fa-chevron-right"></i></p>
+                                </div>
+                            </div>
+                            <div class="baris" style="margin-top: -8px;">
+                                <div class="kolom d-flex justify-content-between ">
+                                    <p class="text-muted" style="font-size: 12px;">Available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="first bg-white mt-4">
+        <div class="container">
+            <div class="bar pt-2 ">
+                <a href="">
+                    <div class="baris d-flex">
+                        <div class="kolom">
+                            <button type="button" class="btn  text-white" style="background-color: #FCC531;"><i class="fa-solid fa-star"></i></button>
+                        </div>
+                        <div class="kolom ms-3 w-100 " style="border-bottom: 1px solid lightgray;">
+                            <div class="baris">
+                                <div class="kolom d-flex justify-content-between">
+                                    <h1 class="text-black" style="font-size: 15px;"></h1>
+                                    <p class="fw-semibold text-secondary" style="font-size: 12px; "><i class="fa-solid fa-chevron-right"></i></p>
+                                </div>
+                            </div>
+                            <div class="baris" style="margin-top: -25px;">
+                                <div class="kolom d-flex justify-content-between ">
+                                    <p class="text-muted" style="font-size: 15px;">Starred Messages</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="bar pt-2">
+                <a href="">
+                    <div class="baris d-flex">
+                        <div class="kolom">
+                            <button type="button" class="btn text-white" style="background-color: #18ADA2;"><i class="fa-solid fa-laptop"></i></button>
+                        </div>
+                        <div class="kolom ms-3 w-100 " style="border-bottom: 1px solid lightgray;">
+                            <div class="baris">
+                                <div class="kolom d-flex justify-content-between">
+                                    <h1 class="text-black" style="font-size: 15px;"></h1>
+                                    <p class="fw-semibold text-secondary" style="font-size: 12px; "><i class="fa-solid fa-chevron-right"></i></p>
+                                </div>
+                            </div>
+                            <div class="baris" style="margin-top: -25px;">
+                                <div class="kolom d-flex justify-content-between ">
+                                    <p class="text-muted" style="font-size: 15px;">Starred Messages</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="first bg-white mt-4">
+        <div class="container">
+            <div class="bar pt-2 ">
+                <a href="">
+                    <div class="baris d-flex">
+                        <div class="kolom">
+                            <button type="button" class="btn text-white" style="background-color: #3B79FE;"><i class="fa-solid fa-circle-user" style="font-size: 20px;"></i></button>
+                        </div>
+                        <div class="kolom ms-3 w-100 " style="border-bottom: 1px solid lightgray;">
+                            <div class="baris">
+                                <div class="kolom d-flex justify-content-between">
+                                    <h1 class="text-black" style="font-size: 15px;"></h1>
+                                    <p class="fw-semibold text-secondary" style="font-size: 12px; "><i class="fa-solid fa-chevron-right"></i></p>
+                                </div>
+                            </div>
+                            <div class="baris" style="margin-top: -25px;">
+                                <div class="kolom d-flex justify-content-between ">
+                                    <p class="text-muted" style="font-size: 15px;">Account</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="bar pt-2">
+                <a href="">
+                    <div class="baris d-flex">
+                        <div class="kolom">
+                            <button type="button" class="btn text-white" style="background-color: #52D364;"><i class="fa-brands fa-whatsapp" style="font-size: 20px;"></i></button>
+                        </div>
+                        <div class="kolom ms-3 w-100 " style="border-bottom: 1px solid lightgray;">
+                            <div class="baris">
+                                <div class="kolom d-flex justify-content-between">
+                                    <h1 class="text-black" style="font-size: 15px;"></h1>
+                                    <p class="fw-semibold text-secondary" style="font-size: 12px; "><i class="fa-solid fa-chevron-right"></i></p>
+                                </div>
+                            </div>
+                            <div class="baris" style="margin-top: -25px;">
+                                <div class="kolom d-flex justify-content-between ">
+                                    <p class="text-muted" style="font-size: 15px;">Chats</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="bar pt-2">
+                <a href="">
+                    <div class="baris d-flex">
+                        <div class="kolom">
+                            <button type="button" class="btn text-white" style="background-color: #F93E2E;"><i class="fa-solid fa-bell" style="font-size: 20px;"></i></button>
+                        </div>
+                        <div class="kolom ms-3 w-100 " style="border-bottom: 1px solid lightgray;">
+                            <div class="baris">
+                                <div class="kolom d-flex justify-content-between">
+                                    <h1 class="text-black" style="font-size: 15px;"></h1>
+                                    <p class="fw-semibold text-secondary" style="font-size: 12px; "><i class="fa-solid fa-chevron-right"></i></p>
+                                </div>
+                            </div>
+                            <div class="baris" style="margin-top: -25px;">
+                                <div class="kolom d-flex justify-content-between ">
+                                    <p class="text-muted" style="font-size: 15px;">Notifications</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="bar pt-2">
+                <a href="">
+                    <div class="baris d-flex">
+                        <div class="kolom">
+                            <button type="button" class="btn text-white" style="background-color: #4DD665;"><i class="fa-solid fa-retweet"></i></button>
+                        </div>
+                        <div class="kolom ms-3 w-100 " style="border-bottom: 1px solid lightgray;">
+                            <div class="baris">
+                                <div class="kolom d-flex justify-content-between">
+                                    <h1 class="text-black" style="font-size: 15px;"></h1>
+                                    <p class="fw-semibold text-secondary" style="font-size: 12px; "><i class="fa-solid fa-chevron-right"></i></p>
+                                </div>
+                            </div>
+                            <div class="baris" style="margin-top: -25px;">
+                                <div class="kolom d-flex justify-content-between ">
+                                    <p class="text-muted" style="font-size: 15px;">Data and Storage Usage</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="first bg-white mt-4" style="margin-bottom: 300px;">
+        <div class="container">
+            <div class="bar pt-2 ">
+                <a href="">
+                    <div class="baris d-flex">
+                        <div class="kolom">
+                            <button type="button" class="btn btn-primary text-white"><i class="fa-solid fa-circle-info"></i></button>
+                        </div>
+                        <div class="kolom ms-3 w-100 " style="border-bottom: 1px solid lightgray;">
+                            <div class="baris">
+                                <div class="kolom d-flex justify-content-between">
+                                    <h1 class="text-black" style="font-size: 15px;"></h1>
+                                    <p class="fw-semibold text-secondary" style="font-size: 12px; "><i class="fa-solid fa-chevron-right"></i></p>
+                                </div>
+                            </div>
+                            <div class="baris" style="margin-top: -25px;">
+                                <div class="kolom d-flex justify-content-between ">
+                                    <p class="text-muted" style="font-size: 15px;">Help</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="bar pt-2">
+                <a href="">
+                    <div class="baris d-flex">
+                        <div class="kolom">
+                            <button type="button" class="btn text-white" style="background-color: #F93E2E;"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="kolom ms-3 w-100 " style="border-bottom: 1px solid lightgray;">
+                            <div class="baris">
+                                <div class="kolom d-flex justify-content-between">
+                                    <h1 class="text-black" style="font-size: 15px;"></h1>
+                                    <p class="fw-semibold text-secondary" style="font-size: 12px; "><i class="fa-solid fa-chevron-right"></i></p>
+                                </div>
+                            </div>
+                            <div class="baris" style="margin-top: -25px;">
+                                <div class="kolom d-flex justify-content-between ">
+                                    <p class="text-muted" style="font-size: 15px;">Tell a Friend</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    <div class="footer fixed-bottom" style="background-color: #F7F7F7; border-top: 2px solid rgb(221, 221, 221);">
+        <div class="container">
+            <div class="row d-flex justify-content-between align-items-center align-self-center text-center pt-3">
+                <div class="col">
+                    <a href="" style="text-decoration: none;" class="text-secondary">
+                        <i class="mb-2 text-secondary fa-brands fa-stumbleupon-circle fs-4"></i>
+                        <p style="font-size: 10px;" >Story</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="" style="text-decoration: none;" class="text-secondary">
+                        <i class="mb-2 text-secondary fa-solid fa-phone fs-4"></i>
+                        <p style="font-size: 10px;" >Calls</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="" style="text-decoration: none;" class="text-secondary">
+                        <i class="mb-2 text-secondary fa-solid fa-camera fs-4"></i>
+                        <p style="font-size: 10px;" >Camera</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="index.html" style="text-decoration: none;"">
+                        <i class="mb-2 fa-solid fa-comments fs-4 text-secondary"></i>
+                        <p style="font-size: 10px;" class="text-secondary">Chats</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="" style="text-decoration: none;" class="text-secondary">
+                        <!-- <i class=""></i> -->
+                        <i class="mb-2 text-primary fa-solid fa-regular fa-circle-user fs-4"></i>
+                        <p style="font-size: 10px;" class="text-primary" >Account</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
