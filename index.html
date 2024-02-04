@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            font-family: 'Inter', sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .chats:hover{
+            background-color: rgb(240, 240, 240);
+            border-radius: 10px;
+        }
+    </style>
+  </head>
+  <body style="background-color: #F7F7F7;">
+
+    <div class="header" style="border-bottom: 2px solid rgb(221, 221, 221);">
+        <div class="container">
+            <div class="row mt-3 mb-3 d-flex justify-content-between">
+                <div class="col" style="color: #007AFF;"><a href="">Edit</a></div>
+                <div class="col" style="text-align: right; color: #007AFF; font-size: 18px;"><a href=""><i class="fa-regular fa-pen-to-square"></i></a></div>
+            </div>
+            <div class="row">
+                <div class="text-header">
+                    <h1 class="fw-bold">Messages</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="bd-search" id="docsearch" data-bd-docs-version="5.2" >
+                    <input type="text" class="DocSearch DocSearch-Button w-100 mb-3" aria-label="Search" style="border-radius: 10px; border: none; padding: 5px 10px;">
+                        <span class="DocSearch-Button-Container" style="margin-left: -375px;">
+                            <svg width="17" height="17" class="DocSearch-Search-Icon" viewBox="0 0 20 20" style="margin-top: -5px;">
+                                <path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <span class="DocSearch-Button-Placeholder" style="font-size: 12;">Search</span>
+                        </span>
+                    </input>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body-chat pt-2" style="background-color: white;">
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chats mb-3 p-2">
+            <div class="container">
+                <div class="chat d-flex align-items-center">
+                    <div class="baris d-flex">
+                        <div class="kolom align-self-center">
+                            <div class="gambar me-2">
+                                <img src="https://orbiapp.io/hs-fs/hubfs/orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp?width=2000&height=2000&name=orbiapp.iohubfsblog%20img%201%20(1)%20(1).webp" alt="" class="img-fluid rounded-circle" style="width: 55px;">
+                            </div>
+                        </div>
+                        <div class="kolom align-self-center " style="width: 100%; margin-bottom: -20px;border-bottom: 1px solid rgb(221, 221, 221);">
+                            <div class="text">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h1 class="fw-bolder" style="font-size: 14px;">Siti Christine </h1>
+                                    </div>
+                                    <div class="col">
+                                        <p class="fw-semibold" style="font-size: 11px; text-align: right">20.45</p>
+                                    </div>
+                                </div>
+                                
+                                <p style="font-size: 11px; margin-top: -10px;"><i class="fa-solid fa-check-double" style="color: #007AFF; "></i> Hello! As always, in future. It's not publicly available yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+    </div>
+
+    <div class="footer fixed-bottom" style="background-color: #F7F7F7; border-top: 2px solid rgb(221, 221, 221);">
+        <div class="container">
+            <div class="row d-flex justify-content-between align-items-center align-self-center text-center pt-3">
+                <div class="col">
+                    <a href="" style="text-decoration: none;" class="text-secondary">
+                        <i class="mb-2 text-secondary fa-brands fa-stumbleupon-circle fs-4"></i>
+                        <p style="font-size: 10px;" >Status</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="" style="text-decoration: none;" class="text-secondary">
+                        <i class="mb-2 text-secondary fa-solid fa-phone fs-4"></i>
+                        <p style="font-size: 10px;" >Calls</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="" style="text-decoration: none;" class="text-secondary">
+                        <i class="mb-2 text-secondary fa-solid fa-camera fs-4"></i>
+                        <p style="font-size: 10px;" >Camera</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="" style="text-decoration: none;"">
+                        <i class="mb-2 fa-solid fa-comments fs-4 text-primary"></i>
+                        <p style="font-size: 10px;" class="text-primary">Chats</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="" style="text-decoration: none;" class="text-secondary">
+                        <i class="mb-2 text-secondary fa-solid fa-gear fs-4"></i>
+                        <p style="font-size: 10px;" >Settings</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
